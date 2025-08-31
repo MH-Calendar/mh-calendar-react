@@ -1,12 +1,12 @@
 import { useEffect, useState, useCallback, forwardRef, useMemo } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { MhCalendar } from "./mh-cal-react/components";
 import { defineCustomElements } from "mh-calendar-core/loader";
 import {
   IMHCalendarConfig,
   IMHCalendarEvent,
   IMHCalendarUserApi,
 } from "./types";
+import { MhCalendar } from "./mh-calendar-react/components";
 
 defineCustomElements(window);
 
